@@ -16,7 +16,7 @@ init:
 
 install:
     - ps: 'Start-FileDownload "http://cygwin.com/setup-x86.exe" -FileName "setup-x86.exe"'
-    - 'setup-x86.exe --quiet-mode --no-shortcuts --only-site --root "%CYG_ROOT%" --site "%CYG_MIRROR%" --local-package-dir "%CYG_CACHE%" --packages libqt3-devel-3.3.8b-19,libqt3-3.3.8b-19,qt3-qtconfig-3.3.8b-19,qt3-devel-tools-3.3.8b-19  > NUL 2>&1
+    - 'setup-x86.exe --quiet-mode --no-shortcuts --only-site --root "%CYG_ROOT%" --site "%CYG_MIRROR%" --local-package-dir "%CYG_CACHE%" --packages libqt3-devel-3.3.8b-19,libqt3-3.3.8b-19,qt3-qtconfig-3.3.8b-19,qt3-devel-tools-3.3.8b-19  > NUL 2>&1'
     - '%CYG_BASH% -lc "cygcheck -dc cygwin"'
 
 build_script:
