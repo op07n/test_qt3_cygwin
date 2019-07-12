@@ -1,0 +1,1 @@
+# test_qt3_cygwin
