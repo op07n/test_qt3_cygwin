@@ -23,7 +23,7 @@ build_script:
     - 'echo hello world'
     - '%CYG_BASH% -lc "echo \"hello from Cygwin\""'
     - '%CYG_BASH% -lc "echo \"Pull request\""'
-    - '%CYG_BASH% -lc "cd $APPVEYOR_BUILD_FOLDER; exec 0</dev/null; qmake -project && gqmake"'    
+    - '%CYG_BASH% -lc "cd $APPVEYOR_BUILD_FOLDER; exec 0</dev/null; qmake -project && qmake"'    
 
 test: off
 
