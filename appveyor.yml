@@ -35,4 +35,4 @@ build_script:
     - 'echo building...'
     # - git clone https://github.com/CroatiaControlLtd/asterix.git
     # - '%CYG_BASH% -lc "cd $APPVEYOR_BUILD_FOLDER; exec 0</dev/null; cd asterix/src && make install"'
-    - '%CYG_BASH% -lc "cd $APPVEYOR_BUILD_FOLDER; exec 0</dev/null; qmake -project && qmake"'
+    - '%CYG_BASH% -lc "cd $APPVEYOR_BUILD_FOLDER; exec 0</dev/null; echo $QTDIR && qmake -project && qmake"'
