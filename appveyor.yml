@@ -28,7 +28,7 @@ init:
 # Install needed build dependencies
 install:
     - ps: 'Start-FileDownload "http://cygwin.com/$env:CYG_SETUP" -FileName "$env:CYG_SETUP"'
-    - '%CYG_SETUP% --quiet-mode --no-shortcuts --only-site --root "%CYG_ROOT%" --site "%CYG_MIRROR%" --local-package-dir "%CYG_CACHE%" --packages automake,bison,gcc-core,libtool,make,gettext-devel,gettext,intltool,pkg-config,clang,llvm,libqt3-devel-3.3.8b-19,libqt3-3.3.8b-19 > NUL 2>&1'
+    - '%CYG_SETUP% --quiet-mode --no-shortcuts --only-site --root "%CYG_ROOT%" --site "%CYG_MIRROR%" --local-package-dir "%CYG_CACHE%" --packages automake,bison,gcc-core,libtool,make,gettext-devel,gettext,intltool,pkg-config,clang,llvm,libqt3-devel-3.3.8b-19,libqt3-3.3.8b-19,qt3-qtconfig-3.3.8b-19  > NUL 2>&1'
     - '%CYG_BASH% -lc "cygcheck -dc cygwin"'
 
 build_script:
