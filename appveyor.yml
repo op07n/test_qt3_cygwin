@@ -22,9 +22,9 @@ install:
 build_script:
     - 'echo hello world'
     - '%CYG_BASH% -lc "echo \"hello from Cygwin\""'
-    - '%CYG_BASH% -lc "./configure"'
+    # - '%CYG_BASH% -lc "./configure"'
     - '%CYG_BASH% -lc "make"'
-    - '%CYG_BASH% -lc "cd $APPVEYOR_BUILD_FOLDER; exec 0</dev/null; qmake -project && qmake"'    
+    # - '%CYG_BASH% -lc "cd $APPVEYOR_BUILD_FOLDER; exec 0</dev/null; qmake -project && qmake"'    
 
 test: off
 
